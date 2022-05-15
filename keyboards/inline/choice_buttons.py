@@ -32,6 +32,52 @@ choice = InlineKeyboardMarkup(row_width=2,
                                   ]
                               ])
 
+choiceTelegram = InlineKeyboardMarkup(row_width=4,
+                                      inline_keyboard=[
+                                          [
+                                              InlineKeyboardButton(
+                                                  text="Разработка бота",
+                                                  callback_data=info_callback.new(item_name='develop',
+                                                                                  link='Подробнее')
+                                              ),
+                                              InlineKeyboardButton(
+                                                  text="Реклама и продвижение",
+                                                  callback_data="info:add:Подробнее"
+                                              )
+                                          ],
+                                          [
+                                              InlineKeyboardButton(
+                                                  text="Компания",
+                                                  callback_data=info_callback.new(item_name='company',
+                                                                                  link='Подробнее')
+                                              ),
+                                              InlineKeyboardButton(
+                                                  text="Свяжитесь со мной",
+                                                  callback_data="info:contacts:Подробнее"
+                                              )
+                                          ]
+                                      ])
+
+our_skills = InlineKeyboardMarkup(row_width=1,
+                                  inline_keyboard=[[
+                                      InlineKeyboardButton(
+                                          text="Что мы умеем?",
+                                          callback_data=info_callback.new(item_name='skills',
+                                                                          link='Подробнее')
+                                      )
+                                  ]
+                                  ])
+
+startSEO = InlineKeyboardMarkup(row_width=1,
+                                inline_keyboard=[[
+                                    InlineKeyboardButton(
+                                        text="С чего начать SEO продвижение сайта??",
+                                        callback_data=info_callback.new(item_name='startSEOinfo',
+                                                                        link='Подробнее')
+                                    )
+                                ]
+                                ])
+
 site_keyboard = InlineKeyboardMarkup()
 
 SITE_LINK = "https://selection-studio.com/"

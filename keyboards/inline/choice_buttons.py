@@ -20,7 +20,7 @@ choice = InlineKeyboardMarkup(row_width=2,
                                                                           link='Подробнее')
                                       ),
                                       InlineKeyboardButton(
-                                          text="Создание телеграмм-ботов",
+                                          text="Создание ботов",
                                           callback_data="info:telegramm:Подробнее"
                                       )
                                   ],
@@ -28,6 +28,64 @@ choice = InlineKeyboardMarkup(row_width=2,
                                       InlineKeyboardButton(
                                           text="Отмена",
                                           callback_data="cancel"
+                                      )
+                                  ]
+                              ])
+
+botInfo = InlineKeyboardMarkup(row_width=1,
+                               inline_keyboard=[[
+                                   InlineKeyboardButton(
+                                       text="Основные преимущества ботов:",
+                                       callback_data=info_callback.new(item_name='botPluses',
+                                                                       link='Подробнее')
+                                   )
+                               ]
+                               ])
+
+technology = InlineKeyboardMarkup(row_width=1,
+                               inline_keyboard=[[
+                                   InlineKeyboardButton(
+                                       text="Используемые технологии:",
+                                       callback_data=info_callback.new(item_name='techno',
+                                                                       link='Подробнее')
+                                   )
+                               ]
+                               ])
+
+examples = InlineKeyboardMarkup(row_width=1,
+                               inline_keyboard=[[
+                                   InlineKeyboardButton(
+                                       text="Могут быть разработаны, например, такие боты:",
+                                       callback_data=info_callback.new(item_name='examples',
+                                                                       link='Подробнее')
+                                   )
+                               ]
+                               ])
+
+
+cost = InlineKeyboardMarkup(row_width=1,
+                               inline_keyboard=[[
+                                   InlineKeyboardButton(
+                                       text="Стоимость:",
+                                       callback_data=info_callback.new(item_name='price',
+                                                                       link='Подробнее')
+                                   )
+                               ]
+                               ])
+
+connect = InlineKeyboardMarkup(row_width=2,
+                              inline_keyboard=[
+                                  [
+                                      InlineKeyboardButton(
+                                          text="Есть промокод?",
+                                          callback_data=info_callback.new(item_name='promo',
+                                                                          link='Подробнее')
+                                      )
+                                  ],
+                                  [
+                                      InlineKeyboardButton(
+                                          text="Свяжитесь со мной",
+                                          callback_data="info:contacts:Подробнее"
                                       )
                                   ]
                               ])
@@ -41,7 +99,7 @@ choiceTelegram = InlineKeyboardMarkup(row_width=4,
                                                                                   link='Подробнее')
                                               ),
                                               InlineKeyboardButton(
-                                                  text="Реклама и продвижение",
+                                                  text="Продвижение",
                                                   callback_data="info:add:Подробнее"
                                               )
                                           ],

@@ -27,12 +27,6 @@ async def buying_site(call: CallbackQuery, callback_data: dict):
                               reply_markup=choiceTelegram)
 
 
-@dp.callback_query_handler(info_callback.filter(item_name="develop"))
-async def buying_site(call: CallbackQuery, callback_data: dict):
-    await call.answer(cache_time=60)
-    await call.message.answer(f"Информация скоро появится: ", reply_markup=choice)
-
-
 @dp.callback_query_handler(info_callback.filter(item_name="add"))
 async def buying_site(call: CallbackQuery, callback_data: dict):
     await call.answer(cache_time=60)
@@ -54,13 +48,14 @@ async def buying_site(call: CallbackQuery, callback_data: dict):
 @dp.callback_query_handler(info_callback.filter(item_name="startSEOinfo"))
 async def buying_site(call: CallbackQuery, callback_data: dict):
     await call.answer(cache_time=60)
-    await call.message.answer("""1) Заключаем договор на продвижение ключевых фраз
-    2) Аудит вашего текстового контента
-    3) Аудит программного кода
-    4) Оптимизация всего контента под поиск
-    5) Создание новых страниц и разделов, если необходимо
-    6) Копирайтинг / рерайтинг контента под уникальность
-    7) Работа с внешними факторами продвижения - ссылки
+    await call.message.answer("""
+     1) Заключаем договор на продвижение ключевых фраз \n
+    2) Аудит вашего текстового контента\n
+    3) Аудит программного кода\n
+    4) Оптимизация всего контента под поиск\n
+    5) Создание новых страниц и разделов, если необходимо\n
+    6) Копирайтинг / рерайтинг контента под уникальность\n
+    7) Работа с внешними факторами продвижения - ссылки\n
     8) Работа с поведенческими факторами, конверсией, отказами
     """)
     await call.message.answer("Основные разделы информации:",

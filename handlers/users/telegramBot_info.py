@@ -56,12 +56,6 @@ async def buying_site(call: CallbackQuery, callback_data: dict):
     await call.message.answer(
         f"Стоимость разработки Telegram бота от 23.990 рублей. \n"
         f"Все будет зависеть от сложности и сроков, в которые необходимо выполнить. \n"
-        f"Эта цена окупит себя уже через несколько месяцев, так как оптимизирует работу менеджеров, администраторов, бухгалтеров и других.",
-        reply_markup=connect)
+        f"Эта цена окупит себя уже через несколько месяцев, так как оптимизирует работу менеджеров, администраторов, бухгалтеров и других.\n\n"
+        f"Если хотите пообщаться с оператором, введите команду \n /support_call")
 
-
-@dp.callback_query_handler(info_callback.filter(item_name="promo"))
-async def buying_site(call: CallbackQuery, callback_data: dict):
-    await call.answer(cache_time=60)
-    await call.message.answer(
-        f"Введите промокод:")

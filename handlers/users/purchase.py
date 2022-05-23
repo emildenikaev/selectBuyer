@@ -3,11 +3,20 @@ from aiogram.dispatcher.filters import Command
 from aiogram.types import CallbackQuery
 
 from keyboards.inline.callback_datas import info_callback, start_callback
-from keyboards.inline.choice_buttons import siteToBot
+from keyboards.inline.choice_buttons import siteToBot, start_info
 from loader import dp, bot
 from app import BotDB
 
 SITE_LINK = "https://selection-studio.com/"
+
+
+@dp.callback_query_handler(info_callback.filter(item_name="menu"))
+async def buying_site(call: CallbackQuery, callback_data: dict):
+    await call.answer(cache_time=60)
+    await call.message.answer(
+        f"Здесь ты сможешь найти основные раздела бота☺"
+        ,
+        reply_markup=start_info)
 
 
 @dp.callback_query_handler(info_callback.filter(item_name="site"))

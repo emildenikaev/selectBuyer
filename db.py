@@ -1,12 +1,16 @@
 import sqlite3
 
-
 class BotDB:
 
     def __init__(self, db_file):
         """Инициализация соединения с БД"""
         self.conn = sqlite3.connect(db_file)
         self.cursor = self.conn.cursor()
+
+    def get_all_users(self):
+        """Получаем всех пользователей"""
+        with self.conn:
+            return self.cursor.execute("SELECT `user_id` FROM `users`").fetchall()
 
     def user_exists(self, user_id):
         """Проверяем, есть ли пользователь в БД"""

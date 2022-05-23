@@ -5,36 +5,36 @@ from keyboards.inline.callback_datas import info_callback, start_callback
 start_info = InlineKeyboardMarkup(row_width=4,
                                   inline_keyboard=[[
                                       InlineKeyboardButton(
-                                          text="Сайт компании",
+                                          text="Сайт компании⚡",
                                           callback_data=info_callback.new(item_name='site',
                                                                           link='Подробнее')
                                       ),
                                       InlineKeyboardButton(
-                                          text="Интернет магазин",
+                                          text="Интернет магазин⭐",
                                           callback_data="info:onlineshop:Подробнее"
                                       )
 
                                   ], [
                                       InlineKeyboardButton(
-                                          text="Одностраничный сайт",
+                                          text="Одностраничный сайт🌚",
                                           callback_data="info:onepage:Подробнее"
                                       ),
                                       InlineKeyboardButton(
-                                          text="Продвижение сайта",
+                                          text="Продвижение сайта🌝",
                                           callback_data="info:promote:Подробнее"
                                       )
                                   ], [
                                       InlineKeyboardButton(
-                                          text="Контекстная реклама",
+                                          text="Контекстная реклама🌎",
                                           callback_data="info:add:Подробнее"
                                       ),
                                       InlineKeyboardButton(
-                                          text="Поддержка сайтов",
+                                          text="Поддержка сайтов🔥",
                                           callback_data="info:supportsite:Подробнее"
                                       )
                                   ], [
                                       InlineKeyboardButton(
-                                          text="Создание телеграм ботов",
+                                          text="Создание телеграм ботов🤖",
                                           callback_data="info:develop:Подробнее"
                                       )
                                   ]
@@ -42,8 +42,23 @@ start_info = InlineKeyboardMarkup(row_width=4,
 siteToBot = InlineKeyboardMarkup(row_width=2,
                                  inline_keyboard=[[
                                      InlineKeyboardButton(
-                                         text="Создание ботов",
-                                         callback_data="info:develop:Подробнее"
+                                         text="Преимущества наших сайтов:",
+                                         callback_data="info:advantages:Подробнее"
+                                     )
+                                 ], [
+                                     InlineKeyboardButton(
+                                         text="Главное меню",
+                                         callback_data="info:menu:Подробнее"
+                                     )
+                                 ]
+
+                                 ])
+
+sitestart = InlineKeyboardMarkup(row_width=2,
+                                 inline_keyboard=[[
+                                     InlineKeyboardButton(
+                                         text="С чего начать создание сайта компании?:",
+                                         callback_data="info:fromstart:Подробнее"
                                      )
                                  ], [
                                      InlineKeyboardButton(

@@ -158,3 +158,124 @@ shopstart = InlineKeyboardMarkup(row_width=2,
                                      )
                                  ]
                                  ])
+
+whylanding = InlineKeyboardMarkup(row_width=2,
+                                  inline_keyboard=[[
+                                      InlineKeyboardButton(
+                                          text="Почему следует заказать у нас?",
+                                          callback_data=info_callback.new(item_name='whyourlanding',
+                                                                          link='Подробнее')
+                                      )
+                                  ], [
+                                      InlineKeyboardButton(
+                                          text="Главное меню",
+                                          callback_data="info:menu:Подробнее"
+                                      )
+                                  ]
+                                  ])
+
+landingstart = InlineKeyboardMarkup(row_width=2,
+                                    inline_keyboard=[[
+                                        InlineKeyboardButton(
+                                            text="С чего начать создание лендинга?",
+                                            callback_data=info_callback.new(item_name='landingstartinfo',
+                                                                            link='Подробнее')
+                                        )
+                                    ], [
+                                        InlineKeyboardButton(
+                                            text="Главное меню",
+                                            callback_data="info:menu:Подробнее"
+                                        )
+                                    ]
+                                    ])
+
+whypromote = InlineKeyboardMarkup(row_width=2,
+                                  inline_keyboard=[[
+                                      InlineKeyboardButton(
+                                          text="Почему следует заказать у нас?",
+                                          callback_data=info_callback.new(item_name='whyourpromote',
+                                                                          link='Подробнее')
+                                      )
+                                  ], [
+                                      InlineKeyboardButton(
+                                          text="Главное меню",
+                                          callback_data="info:menu:Подробнее"
+                                      )
+                                  ]
+                                  ])
+
+promotestart = InlineKeyboardMarkup(row_width=2,
+                                    inline_keyboard=[[
+                                        InlineKeyboardButton(
+                                            text="С чего начать сео продвижение сайта?",
+                                            callback_data=info_callback.new(item_name='promotestartinfo',
+                                                                            link='Подробнее')
+                                        )
+                                    ], [
+                                        InlineKeyboardButton(
+                                            text="Главное меню",
+                                            callback_data="info:menu:Подробнее"
+                                        )
+                                    ]
+                                    ])
+
+whyadd = InlineKeyboardMarkup(row_width=2,
+                              inline_keyboard=[[
+                                  InlineKeyboardButton(
+                                      text="Почему следует заказать у нас?",
+                                      callback_data=info_callback.new(item_name='whyouradd',
+                                                                      link='Подробнее')
+                                  )
+                              ], [
+                                  InlineKeyboardButton(
+                                      text="Главное меню",
+                                      callback_data="info:menu:Подробнее"
+                                  )
+                              ]
+                              ])
+
+addstart = InlineKeyboardMarkup(row_width=2,
+                                inline_keyboard=[[
+                                    InlineKeyboardButton(
+                                        text="С чего начать настройку рекламы?",
+                                        callback_data=info_callback.new(item_name='addstartinfo',
+                                                                        link='Подробнее')
+                                    )
+                                ], [
+                                    InlineKeyboardButton(
+                                        text="Главное меню",
+                                        callback_data="info:menu:Подробнее"
+                                    )
+                                ]
+                                ])
+
+whysupportsite = InlineKeyboardMarkup(row_width=2,
+                              inline_keyboard=[[
+                                  InlineKeyboardButton(
+                                      text="Почему следует заказать у нас?",
+                                      callback_data=info_callback.new(item_name='whyoursupportsite',
+                                                                      link='Подробнее')
+                                  )
+                              ], [
+                                  InlineKeyboardButton(
+                                      text="Главное меню",
+                                      callback_data="info:menu:Подробнее"
+                                  )
+                              ]
+                              ])
+
+supportsitestart = InlineKeyboardMarkup(row_width=2,
+                                inline_keyboard=[[
+                                    InlineKeyboardButton(
+                                        text="С чего начать поддержку сайта?",
+                                        callback_data=info_callback.new(item_name='supportsitestartinfo',
+                                                                        link='Подробнее')
+                                    )
+                                ], [
+                                    InlineKeyboardButton(
+                                        text="Главное меню",
+                                        callback_data="info:menu:Подробнее"
+                                    )
+                                ]
+                                ])
+

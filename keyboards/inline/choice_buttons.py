@@ -128,3 +128,33 @@ cost = InlineKeyboardMarkup(row_width=2,
                                 )
                             ]
                             ])
+
+whyoursite = InlineKeyboardMarkup(row_width=2,
+                                  inline_keyboard=[[
+                                      InlineKeyboardButton(
+                                          text="Почему следует заказать у нас?",
+                                          callback_data=info_callback.new(item_name='whyshop',
+                                                                          link='Подробнее')
+                                      )
+                                  ], [
+                                      InlineKeyboardButton(
+                                          text="Главное меню",
+                                          callback_data="info:menu:Подробнее"
+                                      )
+                                  ]
+                                  ])
+
+shopstart = InlineKeyboardMarkup(row_width=2,
+                                 inline_keyboard=[[
+                                     InlineKeyboardButton(
+                                         text="С чего начать создание интернет - магазина?",
+                                         callback_data=info_callback.new(item_name='shopstartinfo',
+                                                                         link='Подробнее')
+                                     )
+                                 ], [
+                                     InlineKeyboardButton(
+                                         text="Главное меню",
+                                         callback_data="info:menu:Подробнее"
+                                     )
+                                 ]
+                                 ])

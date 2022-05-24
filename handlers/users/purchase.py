@@ -58,7 +58,7 @@ async def buying_site(call: CallbackQuery, callback_data: dict):
                               f"7) Тестирование, поиск и исправление ошибок\n"
                               f"8) Запуск сайта на вашем хостинге и сдача проекта\n\n "
                               f"Больше информации и примеры работ на нашем сайте: https://selection-studio.com/sayt-dlia-kompanii.html\n\n "
-                              f"Если хотите пообщаться с оператором, введите команду \n /support_call\n "
+                              f"Если хотите пообщаться с оператором, введите команду /support_call\n "
                               ,
                               reply_markup=start_info)
 
